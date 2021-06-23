@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/kurm.png" width="200PX"> </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    
+                    <li><a href="">ABOUT US</a></li>
+                    
+                    <li><a href="">COURES</a></li>
+                    
+                    <li><a href="">BLOG</a></li>
+                    
+                    <li><a href="">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fas fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+    <!------course---->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum rem dolores, vel neque sequi necessitatibus iure expedita quae explicabo libero placeat ea provident veniam fugit aut ut doloribus .</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum rem dolores, vel neque sequi necessitatibus iure expedita quae explicabo libero placeat ea provident veniam fugit aut ut doloribus .</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum rem dolores, vel neque sequi necessitatibus iure expedita quae explicabo libero placeat ea provident veniam fugit aut ut doloribus .</p>
+        </div>
+        </div>
+    </section>
+
+<!------javascript for toggle menu---->
+    <script>
+        var navlinks = document.getElementById("navLinks");
+        function showMenu(){
+            navlinks.style.right ="0";
+        }
+        function hideMenu(){
+            navlinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
